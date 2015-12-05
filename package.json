@@ -1,0 +1,11 @@
+{
+  "name": "ardrone-mot-checker",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.html",
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "ar-drone": "^0.3.3"
+  }
+}
