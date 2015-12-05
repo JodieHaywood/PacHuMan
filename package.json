@@ -6,6 +6,7 @@
   "author": "",
   "license": "MIT",
   "dependencies": {
-    "ar-drone": "^0.3.3"
+    "ar-drone": "^0.3.3",
+    "ws": "^0.8.1"
   }
 }

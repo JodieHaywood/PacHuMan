@@ -70,3 +70,8 @@ kp.register_combo({
     "on_keydown":   function () { client.land(); },
 });
 
+require('ar-drone-png-stream')(client, { port: 8000 });
+
+setTimeout(function() {
+  $('#img').attr('src', 'http://localhost:8000');
+}, 10000);
