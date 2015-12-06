@@ -11,6 +11,9 @@
         font-size: 60px;
         text-shadow: 1px 1px #777700;
       }
+      h2 {
+      	color: white;
+      }
       .panel{
         width: 100%;
         border-width: 10px;
@@ -37,7 +40,19 @@
         font-size: 16px;
         text-align: center;
       }
-      
+      .nitroTable {
+      	width: 100%;
+        border-width: 10px;
+        padding: 12px;
+        table-layout: fixed;
+      }
+      #nitro{
+      	text-align: left;
+      }
+      #nitroTime{
+      	text-align: right;
+      	text-color: #00ffff;
+      }
       
       
       
@@ -49,24 +64,28 @@
     <!-- Place video stream here -->
     <table align="center" class="panel">
       <tr>
-        <td class="keyCell"><div class="key">W</div></td>
-        <td class="keyCell"><div class="key">S</div></td>
-        <td class="keyCell"><div class="key">A</div></td>
-        <td class="keyCell"><div class="key">D</div></td>
-        <td class="keyCell"><div class="key">Space</div></td>
-        <td class="keyCell"><div class="key">L</div></td>
+        <td class="keyCell"><div class="key" id="button_w">W</div></td>
+        <td class="keyCell"><div class="key" id="button_s">S</div></td>
+        <td class="keyCell"><div class="key" id="button_a">A</div></td>
+        <td class="keyCell"><div class="key" id="button_d">D</div></td>
+        <td class="keyCell"><div class="key" id="button_q">Q</div></td>
+        <td class="keyCell"><div class="key" id="button_e">E</div></td>
+        <td class="keyCell"><div class="key" id="button_space">Space</div></td>
+        <td class="keyCell"><div class="key" id="button_l">L</div></td>
       </tr>
       <tr>
         <td class="keyCell"><div class="hint">Forward</div></td>
         <td class="keyCell"><div class="hint">Backward</div></td>
         <td class="keyCell"><div class="hint">Turn left</div></td>
         <td class="keyCell"><div class="hint">Turn right</div></td>
+        <td class="keyCell"><div class="hint">Pan left</div></td>
+        <td class="keyCell"><div class="hint">Pan right</div></td>
         <td class="keyCell"><div class="hint">Turbo</div></td>
         <td class="keyCell"><div class="hint">Emergency landing</div></td>
-      </tr>
-      
-      
+      </tr>    
     </table>
+    
+    
     <h2 id="keys_w"></h2>
     <h2 id="keys_a"></h2>
     <h2 id="keys_s"></h2>
@@ -75,6 +94,7 @@
     <h2 id="keys_f"></h2>
     <h2 id="keys_q"></h2>
     <h2 id="keys_e"></h2>
+    <h2 id="keys_x"></h2>
     <h2 id="keys_space"></h2>
     <h2 id="keys_t"></h2>
     <h2 id="keys_l"></h2>
@@ -82,7 +102,13 @@
     <h2 id="vel_y"></h2>
     <h2 id="ve_z"></h2>
 
-
+    <table class="nitroTable">
+      <tr>
+        <td><h2 id="nitro"></h2></td>
+        <td style="text-align: right;"><h2 id="nitroTime">Nitro time: 0s</h2></td>
+      </tr>
+    </table>
+    
     <script src="jquery.js"></script>
     <script src="keypress.js"></script>
     <script src="main.js"></script>
