@@ -1,10 +1,72 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Hello World!</title>
+    <style>
+      body{
+        background-color: #1a1a1a;
+      }
+      h1 {
+        color: yellow;
+        text-align: center;
+        font-size: 60px;
+        text-shadow: 1px 1px #777700;
+      }
+      .panel{
+        width: 100%;
+        border-width: 10px;
+        padding: 12px;
+        table-layout: fixed;
+      }
+      .key {
+        color: white;
+        font-size: 16px;
+        border-width: 2px;
+        border-color: white;
+        border-style: solid; 
+        border-radius: 25px;
+        border-color: #00aaaa; 
+        background-color: #777700; 
+        text-align: center;
+        margin-right: 20px;
+        margin-left: 20px;
+        margin-bottom: 10px;
+        text-shadow: 1px 0px #ffffff;
+      }
+      .hint{
+        color:white;
+        font-size: 16px;
+        text-align: center;
+      }
+      
+      
+      
+      
+    </style>
+    <title id="mainTitle">PacHuMan</title>
   </head>
   <body>
-    <h1>Hello World!</h1>
+    <h1>PacHuMan</h1>
+    <!-- Place video stream here -->
+    <table align="center" class="panel">
+      <tr>
+        <td class="keyCell"><div class="key">W</div></td>
+        <td class="keyCell"><div class="key">S</div></td>
+        <td class="keyCell"><div class="key">A</div></td>
+        <td class="keyCell"><div class="key">D</div></td>
+        <td class="keyCell"><div class="key">Space</div></td>
+        <td class="keyCell"><div class="key">L</div></td>
+      </tr>
+      <tr>
+        <td class="keyCell"><div class="hint">Forward</div></td>
+        <td class="keyCell"><div class="hint">Backward</div></td>
+        <td class="keyCell"><div class="hint">Turn left</div></td>
+        <td class="keyCell"><div class="hint">Turn right</div></td>
+        <td class="keyCell"><div class="hint">Turbo</div></td>
+        <td class="keyCell"><div class="hint">Emergency landing</div></td>
+      </tr>
+      
+      
+    </table>
     <h2 id="keys_w"></h2>
     <h2 id="keys_a"></h2>
     <h2 id="keys_s"></h2>
@@ -16,6 +78,10 @@
     <h2 id="keys_space"></h2>
     <h2 id="keys_t"></h2>
     <h2 id="keys_l"></h2>
+    <h2 id="vel_x"></h2>
+    <h2 id="vel_y"></h2>
+    <h2 id="ve_z"></h2>
+
 
     <script src="jquery.js"></script>
     <script src="keypress.js"></script>
